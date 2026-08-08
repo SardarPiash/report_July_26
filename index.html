@@ -1174,7 +1174,7 @@
     <!-- TAB NAVIGATION -->
     <div class="tab-nav">
       <button class="tab-btn active" onclick="switchTab('july-report')" id="tab-july">July 2026 Report</button>
-      <button class="tab-btn" onclick="switchTab('winners')" id="tab-winners">Shipped Winners Tracker (Apr + May + June)</button>
+      <button class="tab-btn" onclick="switchTab('winners')" id="tab-winners">Shipped Winners Tracker (May + June)</button>
     </div>
 
     <!-- TAB 1: JULY REPORT -->
@@ -2878,17 +2878,17 @@
 
     <!-- FOLLOW-UP EXECUTIVE SUMMARY -->
     <section class="section">
-      <div class="section-label">Executive summary — shipped winners tracked into July</div>
+      <div class="section-label">Executive summary — shipped winners (May + June)</div>
       <div class="kpi-grid">
         <div class="kpi">
           <div class="kpi-label">Winners tracked</div>
           <div class="kpi-value" style="padding: 5px 0;">8</div>
-          <div class="kpi-delta neutral">3 shipped Apr · 5 shipped May</div>
+          <div class="kpi-delta neutral">May + June production tracking</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Revenue generated</div>
-          <div class="kpi-value pos" style="padding: 5px 0;">৳23,08,724</div>
-          <div class="kpi-delta neutral">Latest full-month (June) extra revenue from winners vs control · July tracking in progress</div>
+          <div class="kpi-value pos" style="padding: 5px 0;">৳19,97,684</div>
+          <div class="kpi-delta neutral">Latest tracked extra revenue (July for updated winners · June for others) vs control</div>
         </div>
       </div>
     </section>
@@ -2901,7 +2901,7 @@
           <div>
             <div class="exp-name">Checkout — Order Summary Dropdown &amp; Redesign</div>
             <div class="exp-hypo">Shipped in May (Variant A — Dropdown Bottom) after a +1.4pp purchase-rate lift.
-              Tracking the production checkout funnel in June against the at-ship rate (68.6%) and the pre-ship control
+              Tracking the production checkout funnel through June–July against the at-ship rate (68.6%) and the pre-ship control
               (67.2%).</div>
             <div class="exp-meta">
               <span class="tag">Mobile</span><span class="tag">Checkout</span><span class="tag tag-green">Shipped May 2026</span>
@@ -2949,46 +2949,51 @@
           <table class="results-table">
             <thead>
               <tr>
-                <th style="width:40%">Funnel stage <span style="color:var(--text3);font-weight:400;">· mobile</span></th>
+                <th style="width:34%">Funnel stage <span style="color:var(--text3);font-weight:400;">· total (prod)</span></th>
                 <th>May <span style="color:var(--text3);font-weight:400;">· shipped</span></th>
                 <th>June</th>
+                <th>July</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="td-metric">Checkout viewers <span style="color:var(--text3);">(exposed users)</span></td>
+                <td class="td-metric">Checkout viewers <span style="color:var(--text3);">(exp viewed)</span></td>
                 <td class="td-control">1,721</td>
                 <td class="td-control">19,441</td>
+                <td class="td-control">28,326</td>
               </tr>
               <tr>
                 <td class="td-metric">Purchased</td>
                 <td class="td-control">1,181 <span class="metric-chip chip-neu">68.6%</span></td>
                 <td class="td-control">13,549 <span class="metric-chip chip-best">69.7%</span></td>
+                <td class="td-control">19,631 <span class="metric-chip chip-pos">69.3%</span></td>
               </tr>
               <tr>
                 <td class="td-metric">Purchase rate Δ <span style="color:var(--text3);">vs 67.19% control</span></td>
                 <td class="td-control"><span class="metric-chip chip-pos">+1.43pp</span> <span style="color:var(--text3);">(+172/mo)</span></td>
                 <td class="td-control"><span class="metric-chip chip-best">+2.50pp</span> <span style="color:var(--text3);">(+487/mo)</span></td>
+                <td class="td-control"><span class="metric-chip chip-pos">+2.11pp</span> <span style="color:var(--text3);">(+599/mo)</span></td>
               </tr>
               <tr>
                 <td class="td-metric" style="font-weight:600;">Extra revenue vs control <span style="color:var(--text3);font-weight:400;">/ month</span></td>
                 <td class="td-control" style="color:var(--green-dark);font-weight:700;">৳1,67,890</td>
                 <td class="td-control" style="color:var(--green-dark);font-weight:700;">৳4,71,888</td>
+                <td class="td-control" style="color:var(--green-dark);font-weight:700;">৳5,80,413</td>
               </tr>
             </tbody>
           </table>
-          <div style="padding:0 1.5rem 1.25rem;font-size:12px;color:var(--text3);">Control = 67.19% pre-ship purchase rate (May test). Extra revenue = incremental orders × AOV (৳977.27 May · ৳968.97 June).</div>
+          <div style="padding:0 1.5rem 1.25rem;font-size:12px;color:var(--text3);">Control = 67.19% pre-ship purchase rate (May test). Extra revenue = incremental orders × AOV (৳977.27 May · ৳968.97 June/July). July: mobile 28,003 → 19,432 (69.4%); tablet 322 → 199 (61.8%).</div>
         </details>
         <details class="exp-results">
           <summary>Key Insights</summary>
           <div style="padding:1rem 1.5rem 1.5rem;display:flex;flex-direction:column;gap:10px;">
             <div class="insight" style="margin-bottom:0;">
               <div class="insight-icon ii-win"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 8L6 11.5L12.5 4" stroke="#0F6E56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <div><div class="insight-body">Production purchase completion is <strong>69.7%</strong> — above the 68.6% measured at ship and +2.5pp over the pre-ship control. The redesign is holding and compounding on ~19.4K checkout users.</div></div>
+              <div><div class="insight-body">July production purchase completion is <strong>69.3%</strong> on <strong>28.3K</strong> checkout viewers — still +2.1pp over the 67.19% pre-ship control and above the 68.6% at-ship rate.</div></div>
             </div>
             <div class="insight" style="margin-bottom:0;">
-              <div class="insight-icon ii-warn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 3.5V8M7.5 10.5V11" stroke="#854F0B" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-              <div><div class="insight-body">Tablet completion lags (57.2% vs 69.8% mobile) — small volume (138 users) but worth a look at the tablet layout.</div></div>
+              <div class="insight-icon ii-win"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 8L6 11.5L12.5 4" stroke="#0F6E56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div><div class="insight-body">Volume grew again May → June → July (1.7K → 19.4K → 28.3K viewers). Mobile holds at <strong>69.4%</strong>; tablet lags at <strong>61.8%</strong> (322 users).</div></div>
             </div>
             <div class="insight" style="margin-bottom:0;">
               <div class="insight-icon ii-warn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 3.5V8M7.5 10.5V11" stroke="#854F0B" stroke-width="1.6" stroke-linecap="round"/></svg></div>
@@ -3003,7 +3008,7 @@
           <div>
             <div class="exp-name">Item cards — show exact rating number</div>
             <div class="exp-hypo">Shipped in May (Variant A) after a +0.17pp purchase lift on 95K/arm. Tracking the
-              full-traffic production funnel in June against the at-ship rate (3.54%) and pre-ship control (3.37%).</div>
+              full-traffic production funnel through June–July against the at-ship rate (3.54%) and pre-ship control (3.37%).</div>
             <div class="exp-meta">
               <span class="tag">Mobile</span><span class="tag tag-green">Shipped May 2026</span>
             </div>
@@ -3040,60 +3045,67 @@
           <table class="results-table">
             <thead>
               <tr>
-                <th style="width:40%">Funnel stage <span style="color:var(--text3);font-weight:400;">· mobile</span></th>
+                <th style="width:34%">Funnel stage <span style="color:var(--text3);font-weight:400;">· total (prod)</span></th>
                 <th>May <span style="color:var(--text3);font-weight:400;">· shipped</span></th>
                 <th>June</th>
+                <th>July</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="td-metric">Card viewers <span style="color:var(--text3);">(exposed users)</span></td>
+                <td class="td-metric">Card viewers <span style="color:var(--text3);">(exp-viewed)</span></td>
                 <td class="td-control">95,664</td>
                 <td class="td-control">162,456</td>
+                <td class="td-control">194,396</td>
               </tr>
               <tr>
                 <td class="td-metric">Card engagement <span style="color:var(--text3);">(exp-clicked)</span></td>
                 <td class="td-control">33,096 <span class="metric-chip chip-neu">34.6%</span></td>
                 <td class="td-control">57,749 <span class="metric-chip chip-pos">35.6%</span></td>
+                <td class="td-control">72,521 <span class="metric-chip chip-best">37.3%</span></td>
               </tr>
               <tr>
                 <td class="td-metric">Add to cart <span style="color:var(--text3);">(atc)</span></td>
                 <td class="td-control">9,873 <span class="metric-chip chip-neu">10.3%</span></td>
                 <td class="td-control">18,879 <span class="metric-chip chip-pos">11.6%</span></td>
+                <td class="td-control">22,001 <span class="metric-chip chip-pos">11.3%</span></td>
               </tr>
               <tr>
                 <td class="td-metric">Purchased</td>
                 <td class="td-control">3,380 <span class="metric-chip chip-neu">3.5%</span></td>
                 <td class="td-control">6,456 <span class="metric-chip chip-best">4.0%</span></td>
+                <td class="td-control">7,099 <span class="metric-chip chip-pos">3.7%</span></td>
               </tr>
               <tr>
                 <td class="td-metric">Purchase rate Δ <span style="color:var(--text3);">vs 3.37% control</span></td>
                 <td class="td-control"><span class="metric-chip chip-pos">+0.17pp</span> <span style="color:var(--text3);">(+172/mo)</span></td>
                 <td class="td-control"><span class="metric-chip chip-best">+0.60pp</span> <span style="color:var(--text3);">(+981/mo)</span></td>
+                <td class="td-control"><span class="metric-chip chip-pos">+0.28pp</span> <span style="color:var(--text3);">(+548/mo)</span></td>
               </tr>
               <tr>
                 <td class="td-metric" style="font-weight:600;">Extra revenue vs control <span style="color:var(--text3);font-weight:400;">/ month</span></td>
                 <td class="td-control" style="color:var(--green-dark);font-weight:700;">৳1,68,090</td>
                 <td class="td-control" style="color:var(--green-dark);font-weight:700;">৳9,50,560</td>
+                <td class="td-control" style="color:var(--green-dark);font-weight:700;">৳5,30,995</td>
               </tr>
             </tbody>
           </table>
-          <div style="padding:0 1.5rem 1.25rem;font-size:12px;color:var(--text3);">Control = 3.37% pre-ship purchase rate (May test). Extra revenue = incremental orders × AOV (৳977.27 May · ৳968.97 June).</div>
+          <div style="padding:0 1.5rem 1.25rem;font-size:12px;color:var(--text3);">Control = 3.37% pre-ship purchase rate (May test). Extra revenue = incremental orders × AOV (৳977.27 May · ৳968.97 June/July). July rates: purchase 7,099 / 194,396 = 3.65% → rounded 3.7%.</div>
         </details>
         <details class="exp-results">
           <summary>Key Insights</summary>
           <div style="padding:1rem 1.5rem 1.5rem;display:flex;flex-direction:column;gap:10px;">
             <div class="insight" style="margin-bottom:0;">
               <div class="insight-icon ii-win"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 8L6 11.5L12.5 4" stroke="#0F6E56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <div><div class="insight-body">Production purchase rate is <strong>3.97%</strong> vs 3.54% at ship (control 3.37%) — the win grew at full traffic (162K exposed), making this the largest tracked impact of the month.</div></div>
-            </div>
-            <div class="insight" style="margin-bottom:0;">
-              <div class="insight-icon ii-win"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 8L6 11.5L12.5 4" stroke="#0F6E56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <div><div class="insight-body">The full funnel is healthy: 35.5% card CTR, 32.7% click→ATC, 34.2% ATC→purchase.</div></div>
+              <div><div class="insight-body">July still beats control: purchase rate <strong>3.7%</strong> vs 3.37% control on <strong>194K</strong> card viewers (↑ from 162K in June). Funnel: 37.3% click · 11.3% ATC · 3.7% purchase.</div></div>
             </div>
             <div class="insight" style="margin-bottom:0;">
               <div class="insight-icon ii-warn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 3.5V8M7.5 10.5V11" stroke="#854F0B" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-              <div><div class="insight-body">The ৳9.5L estimate assumes the May control rate still holds at full traffic. Add a small holdout (e.g. 5%) to firm this number up before quoting it beyond the team.</div></div>
+              <div><div class="insight-body">Purchase rate eased from June’s peak 4.0% → 3.7% while traffic grew — extra revenue step-down (৳9.5L → ৳5.3L) is rate compression, not a collapse under control.</div></div>
+            </div>
+            <div class="insight" style="margin-bottom:0;">
+              <div class="insight-icon ii-warn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 3.5V8M7.5 10.5V11" stroke="#854F0B" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+              <div><div class="insight-body">The estimate assumes the May control rate still holds at full traffic. Add a small holdout (e.g. 5%) to firm this number up before quoting it beyond the team.</div></div>
             </div>
           </div>
         </details>
