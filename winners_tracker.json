@@ -164,6 +164,27 @@ smart tv	0 (0.0%)	-	-	-
 mobile	5,775 (22.1%)	-	-	-
 desktop	1,503 (22.9%)	-	-	-
 tablet	45 (21.3%)	-	-	-
+smart tv	0 (0.0%)	-	-	-",
+      "july_result": "Step
+Device category
+Active users (% of Step 1)
+Completion rate
+Abandonments
+Abandonment rate
+1	view_cart	Total	109,553 (100.0%)	51.23%	53,428	48.77%
+mobile	87,219 (100.0%)	53.7%	40,385	46.3%
+desktop	20,711 (100.0%)	42.68%	11,871	57.32%
+tablet	742 (100.0%)	54.99%	334	45.01%
+smart tv	16 (100.0%)	68.75%	5	31.25%
+2	checkout	Total	56,125 (51.2%)	47.93%	29,223	52.07%
+mobile	46,834 (53.7%)	45.97%	25,306	54.03%
+desktop	8,840 (42.7%)	58.36%	3,681	41.64%
+tablet	408 (55.0%)	52.7%	193	47.3%
+smart tv	11 (68.8%)	0%	11	100%
+3	purchase	Total	26,902 (24.6%)	-	-	-
+mobile	21,528 (24.7%)	-	-	-
+desktop	5,159 (24.9%)	-	-	-
+tablet	215 (29.0%)	-	-	-
 smart tv	0 (0.0%)	-	-	-"
     },
     {
@@ -225,6 +246,17 @@ Abandonment rate
 3	viewed a book	442 (9.1%)	47.74%	231	52.26%
 4	atc	211 (4.4%)	28.91%	150	71.09%
 5	purchase	61 (1.3%)	-	-	-
+",
+      "july_result": "Step
+Active users (% of Step 1)
+Completion rate
+Abandonments
+Abandonment rate
+1	bangla viewed	11,495 (100.0%)	19.03%	9,308	80.97%
+2	clicked	2,187 (19.0%)	58.98%	897	41.02%
+3	viewed a book	1,290 (11.2%)	45.43%	704	54.57%
+4	atc	586 (5.1%)	33.96%	387	66.04%
+5	purchase	199 (1.7%)	-	-	-
 "
     },
     {
