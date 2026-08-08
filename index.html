@@ -967,6 +967,60 @@
       max-width: 28ch;
     }
 
+    /* ── Support notes (lower priority) ── */
+    .support-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .support-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .support-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg2);
+      padding: 1.15rem 1.35rem 1.25rem;
+    }
+
+    .support-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .support-card-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .support-card-body {
+      font-size: 13px;
+      color: var(--text2);
+      line-height: 1.55;
+    }
+
+    .support-card-body ul {
+      margin: 8px 0 0;
+      padding-left: 1.15rem;
+    }
+
+    .support-card-body li {
+      margin-bottom: 6px;
+    }
+
+    .support-card-body li:last-child {
+      margin-bottom: 0;
+    }
+
     .priority {
       display: inline-block;
       padding: 2px 9px;
@@ -1135,6 +1189,16 @@
           <div class="kpi-label">Rollout cleanups</div>
           <div class="kpi-value pos" style="padding: 5px 0;">4</div>
           <div class="kpi-delta neutral">retired A/B code removed</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Blog project</div>
+          <div class="kpi-value pos" style="padding: 5px 0;">13</div>
+          <div class="kpi-delta neutral">features &amp; fixes shipped</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Team support</div>
+          <div class="kpi-value pos" style="padding: 5px 0;">5</div>
+          <div class="kpi-delta neutral">Automation &amp; SEO tasks</div>
         </div>
       </div>
     </section>
@@ -2128,6 +2192,288 @@
           </tr>
         </tbody>
       </table>
+    </section>
+
+    <!-- BLOG PROJECT -->
+    <section class="section">
+      <div class="section-label">Blog project</div>
+      <p class="section-lead">
+        Blog product work this month: API go-live, admin and client features, editor tooling
+        (tables / product images), SEO meta, and UI polish.
+      </p>
+      <div class="rollout-summary">
+        <div class="rollout-chip"><strong>13</strong> items completed</div>
+        <div class="rollout-chip">API · Admin · Client · Editor · SEO</div>
+        <div class="rollout-chip">All tasks status: Done</div>
+      </div>
+      <table class="rollout-table">
+        <thead>
+          <tr>
+            <th style="width:4%">#</th>
+            <th>Task</th>
+            <th style="width:18%">Area</th>
+            <th style="width:14%">Type</th>
+            <th style="width:14%">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">01</td>
+            <td>
+              <div class="rollout-name">Blog product API call sent live</div>
+              <div class="rollout-area">Coordinated with DevOps for production go-live</div>
+            </td>
+            <td><span class="tag">API</span> <span class="tag">DevOps</span></td>
+            <td><span class="tag tag-blue">Release</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">02</td>
+            <td>
+              <div class="rollout-name">Blog admin and client-side update</div>
+              <div class="rollout-area">New feature design update on admin and client</div>
+            </td>
+            <td><span class="tag">Admin</span> <span class="tag">Client</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">03</td>
+            <td>
+              <div class="rollout-name">UTF front-end support implemented</div>
+              <div class="rollout-area">Character encoding support for client-facing blog UI</div>
+            </td>
+            <td><span class="tag">Client</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">04</td>
+            <td>
+              <div class="rollout-name">Menu front-end made bigger and bold</div>
+              <div class="rollout-area">Styled menu as per requirement</div>
+            </td>
+            <td><span class="tag">Client</span> <span class="tag">UI</span></td>
+            <td><span class="tag tag-green">UI</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">05</td>
+            <td>
+              <div class="rollout-name">Added “View” button in all-post dashboard</div>
+              <div class="rollout-area">Admin all-post listing actions</div>
+            </td>
+            <td><span class="tag">Admin</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">06</td>
+            <td>
+              <div class="rollout-name">Fixed client-side table render issue</div>
+              <div class="rollout-area">Blog content tables rendering incorrectly on client</div>
+            </td>
+            <td><span class="tag">Client</span> <span class="tag">Table</span></td>
+            <td><span class="tag tag-amber">Bugfix</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">07</td>
+            <td>
+              <div class="rollout-name">Fixed under-table product image size issue</div>
+              <div class="rollout-area">Product images nested under tables sized incorrectly</div>
+            </td>
+            <td><span class="tag">Client</span> <span class="tag">Images</span></td>
+            <td><span class="tag tag-amber">Bugfix</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">08</td>
+            <td>
+              <div class="rollout-name">Custom table — row / column increase–decrease</div>
+              <div class="rollout-area">Add or remove rows and columns dynamically</div>
+            </td>
+            <td><span class="tag">Admin</span> <span class="tag">Table</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">09</td>
+            <td>
+              <div class="rollout-name">Product image align / indent controls</div>
+              <div class="rollout-area">Move product image left, right, or center</div>
+            </td>
+            <td><span class="tag">Admin</span> <span class="tag">Images</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">10</td>
+            <td>
+              <div class="rollout-name">Meta title and meta description for blog page</div>
+              <div class="rollout-area">SEO fields for blog pages</div>
+            </td>
+            <td><span class="tag">SEO</span> <span class="tag">Client</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">11</td>
+            <td>
+              <div class="rollout-name">Admin panel — table resize via drag-and-drop</div>
+              <div class="rollout-area">Resize tables in the editor by dragging</div>
+            </td>
+            <td><span class="tag">Admin</span> <span class="tag">Table</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">12</td>
+            <td>
+              <div class="rollout-name">Admin panel — per-cell individual color setting</div>
+              <div class="rollout-area">Set background / text color on individual table cells</div>
+            </td>
+            <td><span class="tag">Admin</span> <span class="tag">Table</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">13</td>
+            <td>
+              <div class="rollout-name">Client-side handling for table resize and cell color</div>
+              <div class="rollout-area">Render admin table resize and cell color features correctly on the public blog</div>
+            </td>
+            <td><span class="tag">Client</span> <span class="tag">Table</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- AUTOMATION & SEO SUPPORT -->
+    <section class="section">
+      <div class="section-label">Automation &amp; SEO support</div>
+      <p class="section-lead">
+        Support for Automation (supplier request APIs) and SEO (category ItemList schema + llm.txt research).
+      </p>
+      <div class="rollout-summary">
+        <div class="rollout-chip"><strong>5</strong> items completed</div>
+        <div class="rollout-chip">Automation APIs · SEO · R&amp;D</div>
+        <div class="rollout-chip">Team support</div>
+      </div>
+      <table class="rollout-table">
+        <thead>
+          <tr>
+            <th style="width:4%">#</th>
+            <th>Task</th>
+            <th style="width:16%">For team</th>
+            <th style="width:16%">Area</th>
+            <th style="width:14%">Type</th>
+            <th style="width:12%">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">01</td>
+            <td>
+              <div class="rollout-name">Supplier New Product Add Request — List read &amp; List Item write API</div>
+              <div class="rollout-area">Implemented list read and list-item write endpoints for new product add requests</div>
+            </td>
+            <td><span class="tag">Automation</span></td>
+            <td><span class="tag">API</span> <span class="tag">Supplier</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">02</td>
+            <td>
+              <div class="rollout-name">Supplier Live Product Edit Request — List read &amp; List Item write API</div>
+              <div class="rollout-area">Implemented list read and list-item write endpoints for live product edit requests</div>
+            </td>
+            <td><span class="tag">Automation</span></td>
+            <td><span class="tag">API</span> <span class="tag">Supplier</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">03</td>
+            <td>
+              <div class="rollout-name">Company / Author / Supplier Change Request — List read &amp; List Item write API</div>
+              <div class="rollout-area">Implemented list read and list-item write endpoints for company, author, and supplier change requests</div>
+            </td>
+            <td><span class="tag">Automation</span></td>
+            <td><span class="tag">API</span> <span class="tag">Supplier</span></td>
+            <td><span class="tag tag-green">Feature</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">04</td>
+            <td>
+              <div class="rollout-name">ItemList schema on all category pages</div>
+              <div class="rollout-area">Added ItemList structured data for SEO (backend + frontend)</div>
+            </td>
+            <td><span class="tag">SEO</span></td>
+            <td><span class="tag">Backend</span> <span class="tag">Frontend</span></td>
+            <td><span class="tag tag-green">SEO</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">05</td>
+            <td>
+              <div class="rollout-name">R&amp;D on llm.txt implementation</div>
+              <div class="rollout-area">Researched llm.txt approach and requested required information from the SEO team</div>
+            </td>
+            <td><span class="tag">SEO</span></td>
+            <td><span class="tag">R&amp;D</span></td>
+            <td><span class="tag tag-blue">R&amp;D</span></td>
+            <td><span class="status-pill pill-ship">✓ Done</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- QA, DEPLOYMENT & COORDINATION -->
+    <section class="section">
+      <div class="section-label">QA, deployment &amp; coordination</div>
+      <p class="section-lead">
+        Hands-on work to keep production stable and teams aligned — bug fixes, release unblocking,
+        QA partnership, and stakeholder planning.
+      </p>
+      <div class="rollout-summary">
+        <div class="rollout-chip"><strong>2</strong> workstreams</div>
+        <div class="rollout-chip">QA · DevOps · Product planning</div>
+        <div class="rollout-chip">Stability &amp; alignment</div>
+      </div>
+      <div class="support-grid">
+        <div class="support-card" style="background:var(--bg);border:1px solid var(--border);">
+          <div class="support-card-top">
+            <div class="support-card-title">Bug fixes, QA &amp; conflict resolution</div>
+            <span class="status-pill pill-ship">✓ Done</span>
+          </div>
+          <div class="support-card-body">
+            <ul>
+              <li>Resolved the cart modal bug</li>
+              <li>Fixed a production deployment gap caused by an unpushed MR (with Sakib vai)</li>
+              <li>Partnered with QA and DevOps to clear merge conflicts, address review feedback, and ensure smooth testing and deployment</li>
+            </ul>
+          </div>
+        </div>
+        <div class="support-card" style="background:var(--bg);border:1px solid var(--border);">
+          <div class="support-card-top">
+            <div class="support-card-title">Meetings &amp; coordination</div>
+            <span class="status-pill pill-ship">✓ Done</span>
+          </div>
+          <div class="support-card-body">
+            <ul>
+              <li>Jakaria vai + DevOps — Formbricks</li>
+              <li>Sadi vai and brand team — data &amp; plan for cart product add-item discount feature</li>
+              <li>Town Hall</li>
+              <li>Faizur vai — local API testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
 <section class="section">
