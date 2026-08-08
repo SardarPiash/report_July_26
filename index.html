@@ -867,6 +867,106 @@
       background: var(--bg2);
     }
 
+    /* ── Rollout Test List ── */
+    .section-lead {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.55;
+      margin: -0.5rem 0 1.25rem;
+      max-width: 62ch;
+    }
+
+    .rollout-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1.25rem;
+    }
+
+    .rollout-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      color: var(--text2);
+    }
+
+    .rollout-chip strong {
+      font-family: var(--mono);
+      font-weight: 500;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .rollout-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      font-size: 13px;
+      background: var(--bg);
+    }
+
+    .rollout-table th {
+      text-align: left;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--text3);
+      padding: 12px 16px;
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .rollout-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+
+    .rollout-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .rollout-table tbody tr:hover td {
+      background: var(--bg2);
+    }
+
+    .rollout-id {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--blue-dark);
+      white-space: nowrap;
+      letter-spacing: -0.01em;
+    }
+
+    .rollout-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .rollout-area {
+      font-size: 12px;
+      color: var(--text3);
+      margin-top: 3px;
+    }
+
+    .rollout-action {
+      font-size: 12px;
+      color: var(--text2);
+      line-height: 1.45;
+      max-width: 28ch;
+    }
+
     .priority {
       display: inline-block;
       padding: 2px 9px;
@@ -1030,6 +1130,11 @@
           <div class="kpi-label">Implemented queue</div>
           <div class="kpi-value" style="padding: 5px 0;">11</div>
           <div class="kpi-delta neutral">waiting to go live</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Rollout cleanups</div>
+          <div class="kpi-value pos" style="padding: 5px 0;">4</div>
+          <div class="kpi-delta neutral">retired A/B code removed</div>
         </div>
       </div>
     </section>
@@ -1952,7 +2057,80 @@
 
     </section>
 
+        <!-- ROLLOUT TEST LIST -->
     <section class="section">
+      <div class="section-label">Rollout Test List</div>
+      <p class="section-lead">
+        Retired GrowthBook experiments still carried dead variant branches in production JSPs.
+        This month’s rollout work focused on removing that unused A/B code so the codebase stays
+        clean after tests are closed.
+      </p>
+      <div class="rollout-summary">
+        <div class="rollout-chip"><strong>4</strong> RST tickets completed</div>
+        <div class="rollout-chip"><strong>100%</strong> dead code removed</div>
+        <div class="rollout-chip">Areas: Login · Cart · Shipping · PLP/PDP pricing</div>
+      </div>
+      <table class="rollout-table">
+        <thead>
+          <tr>
+            <th style="width:4%">#</th>
+            <th style="width:16%">RST ID</th>
+            <th>Experiment</th>
+            <th style="width:14%">Area</th>
+            <th style="width:22%">Work done</th>
+            <th style="width:14%">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">01</td>
+            <td><span class="rollout-id">RST-186438</span></td>
+            <td>
+              <div class="rollout-name">Email Login vs OTP Login A/B Test</div>
+              <div class="rollout-area">GrowthBook · retired experiment cleanup</div>
+            </td>
+            <td><span class="tag">Login</span></td>
+            <td class="rollout-action">Removed unused login experiment branches and dead variant markup from the codebase.</td>
+            <td><span class="status-pill pill-ship">✓ Code removed</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">02</td>
+            <td><span class="rollout-id">RST-186442</span></td>
+            <td>
+              <div class="rollout-name">Desktop Cart Page Add Service Message A/B Test</div>
+              <div class="rollout-area">GrowthBook · retired experiment cleanup</div>
+            </td>
+            <td><span class="tag">Cart</span> <span class="tag">Desktop</span></td>
+            <td class="rollout-action">Removed cart service-message experiment code no longer served to users.</td>
+            <td><span class="status-pill pill-ship">✓ Code removed</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">03</td>
+            <td><span class="rollout-id">RST-186444</span></td>
+            <td>
+              <div class="rollout-name">Web Desktop Shipping Page Confirm Order Button Placement A/B Test</div>
+              <div class="rollout-area">GrowthBook · retired experiment cleanup</div>
+            </td>
+            <td><span class="tag">Shipping</span> <span class="tag">Desktop</span></td>
+            <td class="rollout-action">Removed Confirm Order button placement variant logic from shipping page.</td>
+            <td><span class="status-pill pill-ship">✓ Code removed</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3);font-family:var(--mono);">04</td>
+            <td><span class="rollout-id">RST-186447</span></td>
+            <td>
+              <div class="rollout-name">Discount Percentage Font Scaling Experiment A/B Test</div>
+              <div class="rollout-area">GrowthBook · retired experiment cleanup</div>
+            </td>
+            <td><span class="tag">Pricing</span> <span class="tag">UI</span></td>
+            <td class="rollout-action">Removed discount % font-scaling experiment styles and branch conditions.</td>
+            <td><span class="status-pill pill-ship">✓ Code removed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+<section class="section">
       <div class="section-label">Idea Backlog</div>
       <table class="next-table">
         <thead>
