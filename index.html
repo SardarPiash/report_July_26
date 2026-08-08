@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rokomari — A/B Test Report · July 2026</title>
+  <title>Rokomari — Growth Team Report · July 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
 
@@ -876,6 +876,32 @@
       max-width: 62ch;
     }
 
+    .exec-highlight {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg2);
+      padding: 1.15rem 1.4rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .exec-highlight-title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .exec-highlight-body {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.6;
+    }
+
+    .exec-highlight-body strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
     .rollout-summary {
       display: flex;
       flex-wrap: wrap;
@@ -1134,9 +1160,9 @@
     <!-- HEADER -->
     <header class="header">
       <div>
-        <div class="header-eyebrow">Experimentation Report</div>
-        <div class="header-title">A/B Test Summary — July 2026</div>
-        <div class="header-sub">Rokomari.com &nbsp;·&nbsp; CRO Team &nbsp;·&nbsp; Powered by GrowthBook</div>
+        <div class="header-eyebrow">Growth Team Report</div>
+        <div class="header-title">Monthly Summary — July 2026</div>
+        <div class="header-sub">Rokomari.com &nbsp;·&nbsp; Growth / CRO Team &nbsp;·&nbsp; A/B · Blog · Platform</div>
       </div>
       <div class="header-right">
         <div class="badge"><span class="badge-dot"></span> Monthly Report</div>
@@ -1157,38 +1183,24 @@
     <!-- EXECUTIVE SUMMARY -->
     <section class="section">
       <div class="section-label">Executive summary</div>
+      <div class="exec-highlight">
+        <div class="exec-highlight-title">July focus — build the pipeline, ship product, keep production clean</div>
+        <div class="exec-highlight-body">
+          No new A/B tests ran live this month by design. The team used July to
+          <strong>finish 11 experiments ready for launch</strong>, remove retired test code from production,
+          ship a major <strong>Blog</strong> release, and unblock <strong>Automation &amp; SEO</strong>.
+        </div>
+      </div>
       <div class="kpi-grid">
         <div class="kpi">
-          <div class="kpi-label">Experiments run</div>
-          <div class="kpi-value" style="padding: 5px 0;">—</div>
-          <div class="kpi-delta neutral">July 2026 · results pending</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Test outcomes</div>
-          <div class="kpi-value" style="padding: 5px 0; font-size: 15px; line-height: 1.6;">
-            <span style="color:#3B82F6;">11 ⏳</span>
-          </div>
+          <div class="kpi-label">A/B tests ready</div>
+          <div class="kpi-value pos" style="padding: 5px 0;">11</div>
           <div class="kpi-delta neutral">implemented · waiting to go live</div>
         </div>
         <div class="kpi">
-          <div class="kpi-label">Est. revenue impact</div>
-          <div class="kpi-value" style="padding: 5px 0;">—</div>
-          <div class="kpi-delta neutral">/ month (July winners TBD)</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Winners in production</div>
-          <div class="kpi-value pos" style="padding: 5px 0;">৳23,08,724</div>
-          <div class="kpi-delta neutral">/ month est. from prior winners — see Winners tab</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Implemented queue</div>
-          <div class="kpi-value" style="padding: 5px 0;">11</div>
-          <div class="kpi-delta neutral">waiting to go live</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Rollout cleanups</div>
+          <div class="kpi-label">Codebase cleanups</div>
           <div class="kpi-value pos" style="padding: 5px 0;">4</div>
-          <div class="kpi-delta neutral">retired A/B code removed</div>
+          <div class="kpi-delta neutral">retired A/B code removed (RST)</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Blog project</div>
@@ -1196,9 +1208,14 @@
           <div class="kpi-delta neutral">features &amp; fixes shipped</div>
         </div>
         <div class="kpi">
-          <div class="kpi-label">Team support</div>
+          <div class="kpi-label">Automation &amp; SEO</div>
           <div class="kpi-value pos" style="padding: 5px 0;">5</div>
-          <div class="kpi-delta neutral">Automation &amp; SEO tasks</div>
+          <div class="kpi-delta neutral">APIs · schema · R&amp;D delivered</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Delivery items</div>
+          <div class="kpi-value pos" style="padding: 5px 0;">33</div>
+          <div class="kpi-delta neutral">queue + cleanups + Blog + team support</div>
         </div>
       </div>
     </section>
@@ -2828,12 +2845,26 @@
 
     <!-- KEY LEARNINGS -->
     <section class="section">
-      <div class="section-label">Key learnings</div>
+      <div class="section-label">Key takeaways</div>
       <div class="insight">
-        <div class="insight-icon ii-warn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 3.5V8M7.5 10.5V11" stroke="#854F0B" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <div class="insight-icon ii-win"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 8L6 11.5L12.5 4" stroke="#0F6E56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div>
-          <div class="insight-title">July deep-dive learnings pending full results</div>
-          <div class="insight-body">Eight A/B tests are implemented and queued for release. Learnings from July live traffic will be filled in once experiments go live and results are in. Prior-month learnings remain available on the <a href="june_report.html" style="color:inherit;text-decoration:underline;">June 2026 report</a>.</div>
+          <div class="insight-title">July was a build-and-ready month — pipeline is loaded for August</div>
+          <div class="insight-body">Eleven A/B tests are implemented and queued. Shipping them live in August turns this month’s build work into measurable conversion experiments without a cold start.</div>
+        </div>
+      </div>
+      <div class="insight">
+        <div class="insight-icon ii-win"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 8L6 11.5L12.5 4" stroke="#0F6E56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div>
+          <div class="insight-title">Growth delivery went beyond A/B</div>
+          <div class="insight-body">Blog (13), Automation/SEO support (5), and 4 retired-test cleanups show the team shipping product and keeping production lean while the experiment queue filled.</div>
+        </div>
+      </div>
+      <div class="insight">
+        <div class="insight-icon ii-win"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 8L6 11.5L12.5 4" stroke="#0F6E56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div>
+          <div class="insight-title">Prior winners keep compounding</div>
+          <div class="insight-body">Shipped experiments from earlier months still contribute an estimated ৳23,08,724/month — growth impact continues even when new tests are not yet live. Detail in the Winners tab.</div>
         </div>
       </div>
     </section>
@@ -3770,7 +3801,7 @@
     </div><!-- /panel-winners -->
 
     <div class="footer">
-      Prepared by CRO Team · Rokomari.com · July 2026 · Tool: GrowthBook<br>
+      Prepared by Growth / CRO Team · Rokomari.com · July 2026<br>
       Revenue projection (new tests): incremental orders ÷ days run × 30 × AOV ৳968.97 — e.g. order-track: +14 orders
       in 7d → 60/month → ৳58,138. Winners-tracker revenue for the May-shipped winners uses June AOV ৳968.97; April winners keep their category-specific AOVs (৳466.68 extra-discount books, ৳1,065.69 QuickDeal — both back-calculated from the April test). Incremental estimates compare each month's production rate against each
       test’s pre-ship control baseline; no production holdout exists, so treat them as estimates, not banked revenue.
